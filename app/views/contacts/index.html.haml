@@ -1,0 +1,110 @@
+!!!
+%html{:lang => "ja"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %meta{:charset => "UTF-8"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:content => "ie=edge", "http-equiv" => "X-UA-Compatible"}/
+    %title bootstrap
+    %link{:href => "https://use.fontawesome.com/releases/v5.6.1/css/all.css", :rel => "stylesheet"}/
+    / Custom styles for this template
+    / Custom fonts for this template
+    %link{:href => "vendor/fontawesome-free/css/all.min.css", :rel => "stylesheet"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Varela+Round", :rel => "stylesheet"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i", :rel => "stylesheet"}/
+    %link{:crossorigin => "anonymous", :href => "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css", :integrity => "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh", :rel => "stylesheet"}/
+  %body#page-top
+    / Navigation
+    %nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
+      .container
+        %a.navbar-brand.js-scroll-trigger{:href => "#page-top"} U5 official
+        %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "navbarResponsive", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarResponsive", "data-toggle" => "collapse", :type => "button"}
+          Menu
+          %i.fas.fa-bars
+        #navbarResponsive.collapse.navbar-collapse
+          %ul.navbar-nav.ml-auto
+            %li.nav-item
+              %a.nav-link.js-scroll-trigger{:href => "#about"} About
+            %li.nav-item
+              %a.nav-link.js-scroll-trigger{:href => "#works"} Works
+            %li.nav-item
+              %a.nav-link.js-scroll-trigger{:href => "#contact"} Contact
+    / Header
+    %header.masthead
+      .container.d-flex.h-100.align-items-center.row
+        .mx-4.mt-5.text-center
+          %h2.text-white-50.mx-5.mt-2.mb-2 Stay hungry. Stay foolish. by Steve Jobs.
+          %h1.mx-auto.my-0.text-uppercase{:class => ".col-12"} MUSIC × IT
+          %h2.text-white-50.mx-5.mt-2.mb-2{:class => ".col-12"}
+            To live is to be musical, starting with the blood dancing in your veins. Everything living has a rhythm. Do you feel your music?" by Michael Jackson
+          / <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a> mx-auto text-center
+    / About Section
+    %section#about.about-section.text-center
+      .container
+        .row
+          .col-lg-8.mx-auto
+            %h2.text-white.mb-4 Music About
+            %p.text-white-50
+              Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
+              = succeed "." do
+                %a{:href => "http://startbootstrap.com/template-overviews/grayscale/"} the preview page
+            %h2.text-white.mb-4 IT About
+            %p.text-white-50
+              Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
+              = succeed "." do
+                %a{:href => "http://startbootstrap.com/template-overviews/grayscale/"} the preview page
+        / <img src="U5_2.png" class="img-fluid" alt="">
+    / works Section
+    %section#works.works-section.bg-light
+      .container.text-white
+        %h1 Musics
+        / works section Row
+        .row.align-items-center.no-gutters.mb-4.mb-lg-5
+          .col-xl-6.col-lg-5
+            .featured-text.text-center.text-lg-left
+              %h4 Shoreline
+              %p.text-white-50.mb-0 Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!
+          .col-xl-6.col-lg-7.embed-responsive.embed-responsive-16by9
+            %iframe.embed-responsive-item.mb-3.mb-lg-0{:allowfullscreen => "", :src => "https://www.youtube.com/embed/zpOULjyy-n8?rel=0"}
+        .row.align-items-center.no-gutters.mb-4.mb-lg-5
+          .col-xl-6.col-lg-7.embed-responsive.embed-responsive-16by9
+            %iframe.embed-responsive-item.mb-3.mb-lg-0{:allowfullscreen => "", :src => "https://www.youtube.com/embed/zpOULjyy-n8?rel=0"}
+          .col-xl-6.col-lg-5
+            .featured-text.text-center.text-lg-left
+              %h4 Shoreline
+              %p.text-white-50.mb-0 Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!
+        %h3 music works:
+        %h1 wed
+    / Contact
+    %section#contact.contact-section
+      .container
+        .row
+          .col-lg-12.text-center
+            %h2.section-heading.text-white.text-uppercase Contact
+            %h3.section-subheading.text-white-50.text-muted Lorem ipsum dolor sit amet consectetur.
+        = link_to"contact from", new_contact_path
+        
+        .social.d-flex.justify-content-center
+          %a.mx-2{:href => "#"}
+            %i.fab.fa-twitter.fa-spin
+          %a.mx-2{:href => "#"}
+            %i.fab.fa-facebook.fa-spin
+          %a.mx-2{:href => "#"}
+            %i.fab.fa-instagram.fa-spin
+          %a.mx-2{:href => "#"}
+            %i.fab.fa-youtube.fa-spin
+    / Footer
+    %footer.bg-black.small.text-center.text-white-50
+      .container
+        %img.rounded.mx-auto.d-block{:alt => "", :src => "U5.png", :style => "width: 50px; height: 70px;"}/
+        U5 official MUSIC × IT 2020
+    / Bootstrap core JavaScript
+    %script{:src => "vendor/jquery/jquery.min.js"}
+    %script{:src => "vendor/bootstrap/js/bootstrap.bundle.min.js"}
+    / Plugin JavaScript
+    %script{:src => "vendor/jquery-easing/jquery.easing.min.js"}
+    / Contact form JavaScript
+    %script{:src => "js/jqBootstrapValidation.js"}
+    %script{:src => "js/contact_me.js"}
+    / Custom scripts for this template
+    %script{:src => "js/agency.min.js"}
