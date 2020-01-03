@@ -1,0 +1,26 @@
+
+div.new{
+  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../aboub.jpg");  padding-left:5% ;
+  position: absolute;
+  height: 80%;
+  width: 89%;
+  // margin-left: 7%;
+  // margin-top: 5%;
+  opacity: 0.8;
+  padding: 70px;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+textarea#contact_message{
+  width: 50%;
+  margin: 0px; 
+  height: 127px; 
+  width: 695px;
+}
+input#contact_email{
+  width: 30%;
+}
+#text{
+  size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
