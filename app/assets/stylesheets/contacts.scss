@@ -94,7 +94,7 @@
 
 .masthead {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 130%;
   min-height: 50rem;
   padding: 15rem 0;
@@ -104,8 +104,11 @@
   background-attachment: scroll;
   background-size: cover;
 }
+// .mx-4.mt-5.text-center{
+//   width: calc(100% - 200px);
+// }
+
 .masthead h1 {
-  /* font-family: 'Varela Round'; */
   font-size: 2.5rem;
   line-height: 2.8rem;
   letter-spacing: 2rem;

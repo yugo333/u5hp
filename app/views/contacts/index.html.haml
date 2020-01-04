@@ -34,7 +34,7 @@
       .container.d-flex.h-100.align-items-center.row
         .mx-4.mt-5.text-center
           %h2.text-white-50.mx-5.mt-2.mb-2 Stay hungry. Stay foolish. by Steve Jobs.
-          %h1.mx-auto.my-0.text-uppercase{:class => ".col-12"} MUSIC × IT
+          %h1.mx-auto.my-0.text-uppercase{:class => ".col-12"} MUSIC.×.IT
           %h2.text-white-50.mx-5.mt-2.mb-2{:class => ".col-12"}
             To live is to be musical, starting with the blood dancing in your veins. Everything living has a rhythm. Do you feel your music?" by Michael Jackson
             -# <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a> mx-auto text-center
@@ -83,7 +83,23 @@
             %h2.section-heading.text-white.text-uppercase Contact
             %h3.section-subheading.text-white-50.text-muted Lorem ipsum dolor sit amet consectetur.
             .social
-            = link_to"contact from", new_contact_path
+              = form_for @contact, url: contacts_path do |f|
+              
+                = f.text_field :name,placeholder: 'name*'
+                %br/
+                %br/
+
+                = f.text_field :email,placeholder: 'email*'
+                %br/
+                %br/
+
+                = f.text_area :message,placeholder: 'message*'
+                %br/
+                %br/
+                .button
+                  = f.submit "SEND"
+                -# = f.text_area :mp3,placeholder: 'MP3'
+
         
         .social.d-flex.justify-content-center
           %a.mx-2{:href => "#"}

@@ -1,18 +1,18 @@
-*{
-  margin: 0;
-  padding: 0;
-  }
+// *{
+//   margin: 0;
+//   padding: 0;
+//   }
 div.new{
-  background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../aboub.jpg");  padding-left:5% ;
-  position: absolute;
-  height: 85%;
-  width: 100%;
+  // background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../aboub.jpg");  padding-left:5% ;
+  // position: absolute;
+  // height: 85%;
+  // width: 100%;
   // margin-left: 7%;
   // margin-top: 5%;
-  opacity: 0.8;
-  padding: 70px;
-  border: 2px solid rgb(0, 0, 0);
-  font-style: unset;
+  // opacity: 0.8;
+  // padding: 70px;
+  // border: 2px solid rgb(0, 0, 0);
+  // font-style: unset;
 }
 
 textarea#contact_message{
@@ -20,11 +20,54 @@ textarea#contact_message{
   margin: 0px; 
   height: 120px; 
   width: 695px;
+  border-radius: 0.67em;
+  color: #0059ff;
+  opacity: 0.8;
+  box-shadow: red($color: #000000);
+  border: 5px solid rgb(255, 255, 255);
 }
-input#contact_email{
-  width: 30%;
+#contact_email{
+  width: 50%;
+  width: 695px;
+  border-radius: 0.67em;
+  color: #0059ff;
+  opacity: 0.8;
+  box-shadow: red($color: #000000);
+  border: 5px solid rgb(255, 255, 255);
 }
-#text{
-  font-size: 30px;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+// #text{
+//   font-size: 30px;
+//   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+// }
+#contact_name{
+  width: 50%;
+  width: 695px;
+  border-radius: 0.67em;
+  color: #0059ff;
+  opacity: 0.8;
+  box-shadow: red($color: #000000);
+  border: 5px solid rgb(255, 255, 255);
+}
+form#new_contact.new_contact{
+  background: url("../aboub.jpg"); 
+  opacity: 0.7;
+  border-radius: 0.67em;
+}
+
+div.button {
+  display       : inline-block;
+  font-size     : 14pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 10px 35px;   /* 余白       */
+  background    : rgba(0, 0, 0, 0.58);     /* 背景色     */
+  color         : rgba(255, 255, 255, 0.88);     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  opacity       : 1;           /* 透明度     */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 4px 4px 11px #666666;  /* 影の設定 */
+}
+div.button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  opacity       : 0.8;         /* カーソル時透明度 */
 }
