@@ -60,8 +60,8 @@ div.button {
   text-align    : center;      /* 文字位置   */
   cursor        : pointer;     /* カーソル   */
   padding       : 10px 35px;   /* 余白       */
-  background    : rgba(0, 0, 0, 0.58);     /* 背景色     */
-  color         : rgba(255, 255, 255, 0.88);     /* 文字色     */
+  background    : rgba(238, 238, 238, 0.58);     /* 背景色     */
+  color         : rgb(255, 255, 255);     /* 文字色     */
   line-height   : 1em;         /* 1行の高さ  */
   opacity       : 1;           /* 透明度     */
   transition    : .3s;         /* なめらか変化 */

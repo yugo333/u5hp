@@ -45,9 +45,22 @@
           .col-lg-8.mx-auto
             %h2.text-white.mb-4 Music About
             %p.text-white-50
-              Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-              = succeed "." do
-                %a{:href => "http://startbootstrap.com/template-overviews/grayscale/"} the preview page
+              1991年に生まれ、17才の時AK69に憧れ音楽の道を志しDTMを始め、
+              同時にRaperとして都内でLiveをし始めるがR&Bの魅力にとりつかれsingerへ転向、
+              その後自分の可能性を信じ21才で渡米LAで本格的に音楽を勉強し始める。
+              LAでは主にJazz R&B Blues popを学びjam session に明け暮れる日々。
+              23才で帰国、帰国後は都内にてLive活動をしながら 作詞 作曲 トラックメイクの研究を3年にわたり続け
+              25才から本格的に作詞作曲編曲家として個人で活動し始めた。
+              仕事はアイドルソング~HIP HOPまでを手がけ、平成29年の9月度のテレビ東京の
+              アイドル戦線」という番組のエンディングテーマに自身の曲が抜擢される。
+              作る曲の評判も良く着実に前に進んでいった。制作依頼と並行し個人でのプロデュース活動に力を入れ始め、
+              自身の企画では原点回帰をし自分のスキルが最大限に出せる音楽でプロデュース活動をしようと26才で決意、
+              H30年〜セルフプロデュースの企画を立ち上げ、楽曲制作（作詞作曲編曲）、レコーディング、ミックスマスタリング、
+              映像用台本制作（絵コンテなど）、キャスティング、予算管理、スケジュール管理、リリース、ほとんどの工程をこなす
+              %br
+              最高の音楽を自分が納得出来る作品を生み出していきたいと考え、新たな道を歩み進める。              
+              -# = succeed "." do
+              -#   %a{:href => "http://startbootstrap.com/template-overviews/grayscale/"} the preview page
             %h2.text-white.mb-4 IT About
             %p.text-white-50
               Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
@@ -62,18 +75,38 @@
         .row.align-items-center.no-gutters.mb-4.mb-lg-5
           .col-xl-6.col-lg-5
             .featured-text.text-center.text-lg-left
-              %h4 Shoreline
-              %p.text-white-50.mb-0 Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!
+              %h4 Freedom ft.Rakabee,Kai,Milly
+              %p.text-white-50.mb-0 幅広い層に受け入れてもらえるようなHIPHOPを作りたく,かつ自由をテーマに制作したU5フルプロデュースサウンド"Freedom"。ft.には,黒人顔負けのRakabee,餓鬼レンジャーでもお馴染みのKai,3ヶ国語を操るスーパーシンガーMilly豪華な面々が参加
           .col-xl-6.col-lg-7.embed-responsive.embed-responsive-16by9
-            %iframe.embed-responsive-item.mb-3.mb-lg-0{:allowfullscreen => "", :src => "https://www.youtube.com/embed/zpOULjyy-n8?rel=0"}
+            %iframe.embed-responsive-item.mb-3.mb-lg-0{:allowfullscreen => "", :src => "https://www.youtube.com/embed/rGspsil3dn0" }
         .row.align-items-center.no-gutters.mb-4.mb-lg-5
           .col-xl-6.col-lg-7.embed-responsive.embed-responsive-16by9
-            %iframe.embed-responsive-item.mb-3.mb-lg-0{:allowfullscreen => "", :src => "https://www.youtube.com/embed/zpOULjyy-n8?rel=0"}
+            %iframe.embed-responsive-item.mb-3.mb-lg-0{:allowfullscreen => "", :src => "https://www.youtube.com/embed/QqgyRMPwK_4" }
           .col-xl-6.col-lg-5
             .featured-text.text-center.text-lg-left
-              %h4 Shoreline
-              %p.text-white-50.mb-0 Grayscale is open source and MIT licensed. This means you can use it for any project - even commercial projects! Download it, customize it, and publish your website!
-        %h3 music works:
+              %h4 Everybody
+              %p.text-white-50.mb-0 90'sの要素straight beetのなかにbounceの要素もありシンプルなのに深いHIPHOPサウンドに仕上げたU5フルプロデュースサウンド"Everybody"。ft.には,ガールズ RAPグループで一世を風靡したS7ICKCHICKsのバイリンガルラッパーLIPSTORM
+        %h3 music works:楽曲提供&共演アーティスト
+        %ul
+          %li ＃ドルーチェ 
+          %li 抜刀
+          %li mimimu
+          %li ムーンダライト
+          %li Milly
+          %li Kai
+          %li Rakabee
+          %li Lipstorm
+          %li Clyde Williams
+          %li Nessa
+          %li etc.....
+
+        %h3 music works:取引先
+        %ul
+          %li プロダクション・アイ.LLC
+          %li スパイラルミュージック
+          %li LGD PRODUCTION
+          %li エイトフォース
+          %li JCC TOKYO
         %h1 wed
     / Contact
     %section#contact.contact-section
@@ -81,7 +114,7 @@
         .row
           .col-lg-12.text-center
             %h2.section-heading.text-white.text-uppercase Contact
-            %h3.section-subheading.text-white-50.text-muted Lorem ipsum dolor sit amet consectetur.
+            %h5.section-subheading.text-white-50.text-muted 楽曲制作、 MV(MUSICvideo)、webサイト制作、app制作などご気軽にお問い合わせください！
             .social
               = form_for @contact, url: contacts_path do |f|
               
@@ -98,17 +131,18 @@
                 %br/
                 .button
                   = f.submit "SEND"
+                  
                 -# = f.text_area :mp3,placeholder: 'MP3'
 
         
         .social.d-flex.justify-content-center
-          %a.mx-2{:href => "#"}
+          %a.mx-2{:href => "https://twitter.com/yugo59290147"}
             %i.fab.fa-twitter.fa-spin
-          %a.mx-2{:href => "#"}
+          %a.mx-2{:href => "https://www.facebook.com/yugo.takeuchi"}
             %i.fab.fa-facebook.fa-spin
-          %a.mx-2{:href => "#"}
+          %a.mx-2{:href => "https://www.instagram.com/___u5____/?hl=ja"}
             %i.fab.fa-instagram.fa-spin
-          %a.mx-2{:href => "#"}
+          %a.mx-2{:href => "https://www.youtube.com/channel/UChAhO3nKwVdZ5GYMF-HkE1g?view_as=subscriber"}
             %i.fab.fa-youtube.fa-spin
     / Footer
     %footer.bg-black.small.text-center.text-white-50
