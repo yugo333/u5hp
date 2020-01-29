@@ -60,12 +60,15 @@ div.button {
   text-align    : center;      /* 文字位置   */
   cursor        : pointer;     /* カーソル   */
   padding       : 10px 35px;   /* 余白       */
-  background    : rgba(238, 238, 238, 0.58);     /* 背景色     */
-  color         : rgb(255, 255, 255);     /* 文字色     */
+  // background    : rgba(238, 238, 238, 0.58);     /* 背景色     */
+  // color         : rgb(255, 255, 255);     /* 文字色     */
   line-height   : 1em;         /* 1行の高さ  */
-  opacity       : 1;           /* 透明度     */
+  // opacity       : 1;           /* 透明度     */
   transition    : .3s;         /* なめらか変化 */
-  box-shadow    : 4px 4px 11px #666666;  /* 影の設定 */
+  box-shadow    : 4px 4px 50px #666666;  /* 影の設定 */
+  background: transparent;
+  input{background: transparent;font-family: 'Georgia'; border: transparent; color: white;}
+  input:hover{color: red;}
 }
 div.button:hover {
   box-shadow    : none;        /* カーソル時の影消去 */
