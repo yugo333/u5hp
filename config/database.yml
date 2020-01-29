@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: u5hp_production
-  username: u5hp
-  password: <%= ENV['U5HP_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
