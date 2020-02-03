@@ -146,6 +146,18 @@
               %a.mx-2{:href => "https://youtu.be/F4LpwbYw2c8"}
                 %i.fab.fa-youtube.fa-spin
               %p.text-white-50.mb-0 p5.jsとアニメーションcssでのART作品
+        .row.align-items-center.no-gutters.mb-4.mb-lg-5
+          .col-xl-6.col-lg-5
+            .featured-text.text-center.text-lg-left
+              %h4 The Free Sound
+              %a.mx-2{:href => "https://github.com/yugo333/free_music"}
+                %i.fab.fa-github.fa-spin
+              %a.mx-2{:href => "http://www.u5-official.com/"}
+                %i.fas.fa-home.fa-spin
+              %p.text-white-50.mb-0  html/css/ruby/rails/aws/mysqlを用いてフリーダウンロードページを作成しました,現状はまだ工事中です
+          .col-xl-6.col-lg-7.embed-responsive.embed-responsive-16by9
+            -# %iframe.embed-responsive-item.mb-3.mb-lg-0{:allowfullscreen => "", :src => "https://youtu.be/nt501QYxuKs" }
+            %img.embed-responsive-item.mb-3.mb-lg-0{:alt => "", :src => "the_free_sound.png", :style => "width: 555px; height: 312px;"}/
         %h3 TI works: coming soon
     / Contact
     %section#contact.contact-section
@@ -153,7 +165,7 @@
         .row
           .col-lg-12.text-center
             %h2.section-heading.text-white.text-uppercase Contact
-            %h5.section-subheading.text-white-50.text-muted 現在調整中
+            %h5.section-subheading.text-white-50.text-muted お気軽にお問い合わせください
             .social
               = form_for @contact, url: contacts_path do |f|
               
