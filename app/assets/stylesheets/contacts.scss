@@ -215,3 +215,21 @@ a:focus, a:hover {
 footer {
   padding: 5rem 0;
 }
+
+
+
+.titleX{
+  font-size: 25px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.titleX:hover{
+  font-size: 33px;
+}
+
+a.mx-2{
+  transition: 0.5s;
+}
+a.mx-2:hover{
+  font-size: 30px;
+}
