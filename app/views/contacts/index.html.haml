@@ -1,235 +1,220 @@
-!!!
-%html{:lang => "ja"}
-  %head
-    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %meta{:charset => "UTF-8"}/
-    -# %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
-    %meta{:content => "ie=edge", "http-equiv" => "X-UA-Compatible"}/
-    %title bootstrap
-    %link{:href => "https://use.fontawesome.com/releases/v5.6.1/css/all.css", :rel => "stylesheet"}/
-    / Custom styles for this template
-    / Custom fonts for this template
-    %link{:href => "vendor/fontawesome-free/css/all.min.css", :rel => "stylesheet"}/
-    %link{:href => "https://fonts.googleapis.com/css?family=Varela+Round", :rel => "stylesheet"}/
-    %link{:href => "https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i", :rel => "stylesheet"}/
-    %link{:crossorigin => "anonymous", :href => "https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css", :integrity => "sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh", :rel => "stylesheet"}/
-  %body#page-top
-    / Navigation
-    %nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top
-      .container
-        %a.navbar-brand.js-scroll-trigger{:href => "#page-top"} U5 official
-        %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "navbarResponsive", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarResponsive", "data-toggle" => "collapse", :type => "button"}
-          Menu
-          %i.fas.fa-bars
-        #navbarResponsive.collapse.navbar-collapse
-          %ul.navbar-nav.ml-auto
-            %li.nav-item
-              %a.nav-link.js-scroll-trigger{:href => "#about"} About
-            %li.nav-item
-              %a.nav-link.js-scroll-trigger{:href => "#works"} Works
-            %li.nav-item
-              %a.nav-link.js-scroll-trigger{:href => "#contact"} Contact
-    / Header
-    %header.masthead
-      .container.d-flex.h-100.align-items-center.row
-        .mx-4.mt-5.text-center
-          %h2.text-white-50.mx-5.mt-2.mb-2 Stay hungry. Stay foolish. by Steve Jobs.
-          %h1.mx-auto.my-0.text-uppercase{:class => ".col-12"} MUSIC.×.IT
-          %h2.text-white-50.mx-5.mt-2.mb-2{:class => ".col-12"}
-            To live is to be musical, starting with the blood dancing in your veins. Everything living has a rhythm. Do you feel your music?" by Michael Jackson
-            -# <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a> mx-auto text-center
-    / About Section
-    %section#about.about-section.text-center
-      .container
-        .row
-          .col-lg-8.mx-auto
-            %h2.text-white.mb-4 Music About
-            %p.text-white-50
-              1991年に生まれ、17才の時AK69に憧れ音楽の道を志しDTMを始め、
-              同時にRaperとして都内でLiveをし始めるがR&Bの魅力にとりつかれsingerへ転向、
-              その後自分の可能性を信じ21才で渡米LAで本格的に音楽を勉強し始める。
-              LAでは主にJazz R&B Blues popを学びjam session に明け暮れる日々。
-              23才で帰国、帰国後は都内にてLive活動をしながら 作詞 作曲 トラックメイクの研究を3年にわたり続け
-              25才から本格的に作詞作曲編曲家として個人で活動し始めた。
-              仕事はアイドルソング~HIP HOPまでを手がけ、平成29年の9月度のテレビ東京の
-              アイドル戦線」という番組のエンディングテーマに自身の曲が抜擢される。
-              作る曲の評判も良く着実に前に進んでいった。制作依頼と並行し個人でのプロデュース活動に力を入れ始め、
-              自身の企画では原点回帰をし自分のスキルが最大限に出せる音楽でプロデュース活動をしようと26才で決意、
-              H30年〜セルフプロデュースの企画を立ち上げ、楽曲制作（作詞作曲編曲）、レコーディング、ミックスマスタリング、
-              映像用台本制作（絵コンテなど）、キャスティング、予算管理、スケジュール管理、リリース、ほとんどの工程をこなす
-              %br
-              最高の音楽を自分が納得出来る作品を生み出していきたいと考え、新たな道を歩み進める。              
-              -# = succeed "." do
-              -#   %a{:href => "http://startbootstrap.com/template-overviews/grayscale/"} the preview page
-            %h2.text-white.mb-4 IT About
-            %p.text-white-50
-              2019/11~ TECH::EXPERT
-              HTML5/ CSS/ Js/ P5.js/ Ruby/ Rails/ MySql/AWS
-              -# = succeed "." do
-              -#   %a{:href => "http://startbootstrap.com/template-overviews/grayscale/"} the preview page
-        / <img src="U5_2.png" class="img-fluid" alt="">
-    / works Section
-    %section#works.works-section.bg-light
-      .container.text-white
-        %h1 Musics
-        / works section Row
-        .row.align-items-center.no-gutters.mb-4.mb-lg-5
-          .col-xl-6.col-lg-5
-            .featured-text.text-center.text-lg-left
-              %a(href="https://www.youtube.com/embed/rGspsil3dn0" class="titleX") Freedom ft.Rakabee,Kai,Milly
-              %p.text-white-50.mb-0 幅広い層に受け入れてもらえるようなHIPHOPを作りたく,かつ自由をテーマに制作したU5フルプロデュースサウンド"Freedom"。ft.には,黒人顔負けのRakabee,餓鬼レンジャーでもお馴染みのKai,3ヶ国語を操るスーパーシンガーMilly豪華な面々が参加
-          .col-xl-6.col-lg-7.embed-responsive.embed-responsive-16by9
-            %iframe.embed-responsive-item.mb-3.mb-lg-0{:allowfullscreen => "", :src => "https://www.youtube.com/embed/rGspsil3dn0" }
-        .row.align-items-center.no-gutters.mb-4.mb-lg-5
-          .col-xl-6.col-lg-7.embed-responsive.embed-responsive-16by9
-            %iframe.embed-responsive-item.mb-3.mb-lg-0{:allowfullscreen => "", :src => "https://www.youtube.com/embed/QqgyRMPwK_4" }
-          .col-xl-6.col-lg-5
-            .featured-text.text-center.text-lg-left
-              %a(href="https://www.youtube.com/embed/QqgyRMPwK_4" class="titleX") Everybody ft.LIPSTORM
-              %p.text-white-50.mb-0 90'sの要素straight beetのなかにbounceの要素もありシンプルなのに深いHIPHOPサウンドに仕上げたU5フルプロデュースサウンド"Everybody"。ft.には,ガールズ RAPグループで一世を風靡したS7ICKCHICKsのバイリンガルラッパーLIPSTORM
-        .row.align-items-center.no-gutters.mb-4.mb-lg-5
-          .col-xl-6.col-lg-5
-            .featured-text.text-center.text-lg-left
-              %a(href="https://www.youtube.com/embed/NZ9eSyr_HTM" class="titleX") Red☆Bull ft.Nessa
-              %p.text-white-50.mb-0 米国のミュージシャンからも一目を置かれているスパーシンガーNessaとのコラボ作品。percussionとbrassが特徴的で爽快感あふれる一曲に仕上がっております。
-          .col-xl-6.col-lg-7.embed-responsive.embed-responsive-16by9
-            %iframe.embed-responsive-item.mb-3.mb-lg-0{:allowfullscreen => "", :src => "https://www.youtube.com/embed/NZ9eSyr_HTM" }
-        %h3 music works:楽曲提供&共演アーティスト
-        %ul
-          %li ＃ドルーチェ 
-          %li 抜刀
-          %li mimimu
-          %li ムーンダライト
-          %li Milly
-          %li Kai
-          %li Rakabee
-          %li Lipstorm
-          %li Clyde Williams
-          %li Nessa
-          %li etc.....
 
-        %h3 music works:取引先
-        %ul
-          %li プロダクション・アイ.LLC
-          %li スパイラルミュージック
-          %li LGD PRODUCTION
-          %li エイトフォース
-          %li JCC TOKYO
+/ Navigation
+%nav#mainNav.navbar.navbar-expand-lg.navbar-light.fixed-top{style:"width:100vw;"}
+  .container
+    %a.navbar-brand.js-scroll-trigger{:href => "#page-top"} U5 official
+    %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "navbarResponsive", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarResponsive", "data-toggle" => "collapse", :type => "button"}
+      Menu
+      %i.fas.fa-bars
+    #navbarResponsive.collapse.navbar-collapse
+      %ul.navbar-nav.ml-auto
+        %li.nav-item
+          %a.nav-link.js-scroll-trigger{:href => "#about"} About
+        %li.nav-item
+          %a.nav-link.js-scroll-trigger{:href => "#works"} Works
+        %li.nav-item
+          %a.nav-link.js-scroll-trigger{:href => "#contact"} Contact
+/ Header
+%header.masthead
+  .container.d-flex.h-100.align-items-center.row
+    .mx-4.mt-5.text-center{style:"width:100vw;"}
+      %h2.text-white-50.mx-5.mt-2.mb-2 Stay hungry. Stay foolish. by Steve Jobs.
+      %h1.mx-auto.my-0.text-uppercase{:class => ".col-12"} MUSIC.×.IT
+      %h2.text-white-50.mx-5.mt-2.mb-2{:class => ".col-12"}
+        To live is to be musical, starting with the blood dancing in your veins. Everything living has a rhythm. Do you feel your music?" by Michael Jackson
+        -# <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a> mx-auto text-center
+/ About Section
+%section#about.about-section.text-center
+  .container
+    .row
+      .col-lg-8.mx-auto
+        %h2.text-white.mb-4 Music About
+        %p.text-white-50
+          1991年に生まれ、17才の時AK69に憧れ音楽の道を志しDTMを始め、
+          同時にRaperとして都内でLiveをし始めるがR&Bの魅力にとりつかれsingerへ転向、
+          その後自分の可能性を信じ21才で渡米LAで本格的に音楽を勉強し始める。
+          LAでは主にJazz R&B Blues popを学びjam session に明け暮れる日々。
+          23才で帰国、帰国後は都内にてLive活動をしながら 作詞 作曲 トラックメイクの研究を3年にわたり続け
+          25才から本格的に作詞作曲編曲家として個人で活動し始めた。
+          仕事はアイドルソング~HIP HOPまでを手がけ、平成29年の9月度のテレビ東京の
+          アイドル戦線」という番組のエンディングテーマに自身の曲が抜擢される。
+          作る曲の評判も良く着実に前に進んでいった。制作依頼と並行し個人でのプロデュース活動に力を入れ始め、
+          自身の企画では原点回帰をし自分のスキルが最大限に出せる音楽でプロデュース活動をしようと26才で決意、
+          H30年〜セルフプロデュースの企画を立ち上げ、楽曲制作（作詞作曲編曲）、レコーディング、ミックスマスタリング、
+          映像用台本制作（絵コンテなど）、キャスティング、予算管理、スケジュール管理、リリース、ほとんどの工程をこなす
           %br
-        %h1 IT
-        .row.align-items-center.no-gutters.mb-4.mb-lg-5
-          .col-xl-6.col-lg-5
-            .featured-text.text-center.text-lg-left
-              %a(href="https://vueplanet.netlify.com/" class="titleX") Vue Planet
-              %a.mx-2{:href => "https://github.com/yugo333/v-arse"}
-                %i.fab.fa-github.fa-spin
-              %a.mx-2{:href => "https://vueplanet.netlify.com/"}
-                %i.fas.fa-home.fa-spin
-              %p.text-white-50.mb-0  Vue.js/html/css/canvasを用いて見た目に特化したアプリケーションを作りました。canvasで制作した地球をモチーフにした球体はドラックすると動き、スクロールすると拡大と縮小します。触ってみてください！
-          .col-xl-6.col-lg-7.embed-responsive.embed-responsive-16by9
-            -# %iframe.embed-responsive-item.mb-3.mb-lg-0{:allowfullscreen => "", :src => "https://youtu.be/nt501QYxuKs" }
-            %img.embed-responsive-item.mb-3.mb-lg-2{:alt => "", :src => "qqq.png", :style => "width: 100%; height: 100%;"}/
-        .row.align-items-center.no-gutters.mb-4.mb-lg-5
-          .col-xl-6.col-lg-7.embed-responsive.embed-responsive-16by9
-            -# %iframe.embed-responsive-item.mb-3.mb-lg-0{:allowfullscreen => "", :src => "https://youtu.be/dTHXmFPd0Gc" }
-            %img.embed-responsive-item.mb-3.mb-lg-0{:alt => "", :src => "box.png", :style => "width: 100%; height: 100%;"}/
-          .col-xl-6.col-lg-5
-            .featured-text.text-center.text-lg-left
-              %a(href="https://youtu.be/dTHXmFPd0Gc" class="titleX") sound＿box
-              %a.mx-2{:href => "https://github.com/yugo333/p5_sound_box"}
-                %i.fab.fa-github.fa-spin
-              %a.mx-2{:href => "https://youtu.be/dTHXmFPd0Gc"}
-                %i.fab.fa-youtube.fa-spin
-              %p.text-white-50.mb-0 p5.sound.jsを使い音楽とITを融合させた作品、シンプルにどのシーンでもどのジャンルでも合うような表現にしました
-        .row.align-items-center.no-gutters.mb-4.mb-lg-5
-          .col-xl-6.col-lg-5
-            .featured-text.text-center.text-lg-left
-              %a(href="https://youtu.be/nt501QYxuKs" class="titleX") sound_ball
-              %a.mx-2{:href => "https://github.com/yugo333/p5_ball"}
-                %i.fab.fa-github.fa-spin
-              %a.mx-2{:href => "https://youtu.be/nt501QYxuKs"}
-                %i.fab.fa-youtube.fa-spin
-              %p.text-white-50.mb-0  p5.sound.jsを使い音楽とITを融合させた作品、民族系を意識させた色合い
-          .col-xl-6.col-lg-7.embed-responsive.embed-responsive-16by9
-            -# %iframe.embed-responsive-item.mb-3.mb-lg-0{:allowfullscreen => "", :src => "https://youtu.be/nt501QYxuKs" }
-            %img.embed-responsive-item.mb-3.mb-lg-0{:alt => "", :src => "ball.png", :style => "width: 100%; height: 100%;"}/
-        .row.align-items-center.no-gutters.mb-4.mb-lg-5
-          .col-xl-6.col-lg-7.embed-responsive.embed-responsive-16by9
-            -# %iframe.embed-responsive-item.mb-3.mb-lg-0{:allowfullscreen => "", :src => "https://youtu.be/F4LpwbYw2c8" }
-            %img.embed-responsive-item.mb-3.mb-lg-0{:alt => "", :src => "cube.png", :style => "width: 100%; height: 100%;"}/
-          .col-xl-6.col-lg-5
-            .featured-text.text-center.text-lg-left
-              %a(href="https://youtu.be/F4LpwbYw2c8" class="titleX") p5.js art
-              %a.mx-2{:href => "https://github.com/yugo333/p5_cube_box"}
-                %i.fab.fa-github.fa-spin
-              %a.mx-2{:href => "https://youtu.be/F4LpwbYw2c8"}
-                %i.fab.fa-youtube.fa-spin
-              %p.text-white-50.mb-0 p5.jsとアニメーションcssでのART作品
-        .row.align-items-center.no-gutters.mb-4.mb-lg-5
-          .col-xl-6.col-lg-5
-            .featured-text.text-center.text-lg-left
-              %a(href="http://18.178.185.173/" class="titleX") The Free Sound
-              %a.mx-2{:href => "https://github.com/yugo333/free_music"}
-                %i.fab.fa-github.fa-spin
-              %a.mx-2{:href => "http://18.178.185.173/"}
-                %i.fas.fa-home.fa-spin
-              %p.text-white-50.mb-0  html/css/ruby/rails/aws/mysqlを用いてフリーダウンロードページを作成しました,現状はまだ工事中です
-          .col-xl-6.col-lg-7.embed-responsive.embed-responsive-16by9
-            -# %iframe.embed-responsive-item.mb-3.mb-lg-0{:allowfullscreen => "", :src => "https://youtu.be/nt501QYxuKs" }
-            %img.embed-responsive-item.mb-3.mb-lg-2{:alt => "", :src => "the_free_sound.png", :style => "width: 100%; height: 100%;"}/
-        %h3 TI works: coming soon
+          最高の音楽を自分が納得出来る作品を生み出していきたいと考え、新たな道を歩み進める。              
+          -# = succeed "." do
+          -#   %a{:href => "http://startbootstrap.com/template-overviews/grayscale/"} the preview page
+        %h2.text-white.mb-4 IT About
+        %p.text-white-50
+          2019/11~ TECH::EXPERT
+          HTML5/ CSS/ Js/ P5.js/ Ruby/ Rails/ MySql/AWS
+          -# = succeed "." do
+          -#   %a{:href => "http://startbootstrap.com/template-overviews/grayscale/"} the preview page
+    / <img src="U5_2.png" class="img-fluid" alt="">
+/ works Section
+%section#works.works-section.bg-light
+  .container.text-white
+    %h1 Musics
+    / works section Row
+    .row.align-items-center.no-gutters.mb-4.mb-lg-5
+      .col-xl-6.col-lg-5
+        .featured-text.text-center.text-lg-left
+          %a(href="https://www.youtube.com/embed/rGspsil3dn0" class="titleX") Freedom ft.Rakabee,Kai,Milly
+          %p.text-white-50.mb-0 幅広い層に受け入れてもらえるようなHIPHOPを作りたく,かつ自由をテーマに制作したU5フルプロデュースサウンド"Freedom"。ft.には,黒人顔負けのRakabee,餓鬼レンジャーでもお馴染みのKai,3ヶ国語を操るスーパーシンガーMilly豪華な面々が参加
+      .col-xl-6.col-lg-7.embed-responsive.embed-responsive-16by9
+        %iframe.embed-responsive-item.mb-3.mb-lg-0{:allowfullscreen => "", :src => "https://www.youtube.com/embed/rGspsil3dn0" }
+    .row.align-items-center.no-gutters.mb-4.mb-lg-5
+      .col-xl-6.col-lg-7.embed-responsive.embed-responsive-16by9
+        %iframe.embed-responsive-item.mb-3.mb-lg-0{:allowfullscreen => "", :src => "https://www.youtube.com/embed/QqgyRMPwK_4" }
+      .col-xl-6.col-lg-5
+        .featured-text.text-center.text-lg-left
+          %a(href="https://www.youtube.com/embed/QqgyRMPwK_4" class="titleX") Everybody ft.LIPSTORM
+          %p.text-white-50.mb-0 90'sの要素straight beetのなかにbounceの要素もありシンプルなのに深いHIPHOPサウンドに仕上げたU5フルプロデュースサウンド"Everybody"。ft.には,ガールズ RAPグループで一世を風靡したS7ICKCHICKsのバイリンガルラッパーLIPSTORM
+    .row.align-items-center.no-gutters.mb-4.mb-lg-5
+      .col-xl-6.col-lg-5
+        .featured-text.text-center.text-lg-left
+          %a(href="https://www.youtube.com/embed/NZ9eSyr_HTM" class="titleX") Red☆Bull ft.Nessa
+          %p.text-white-50.mb-0 米国のミュージシャンからも一目を置かれているスパーシンガーNessaとのコラボ作品。percussionとbrassが特徴的で爽快感あふれる一曲に仕上がっております。
+      .col-xl-6.col-lg-7.embed-responsive.embed-responsive-16by9
+        %iframe.embed-responsive-item.mb-3.mb-lg-0{:allowfullscreen => "", :src => "https://www.youtube.com/embed/NZ9eSyr_HTM" }
+    %h3 music works:楽曲提供&共演アーティスト
+    %ul
+      %li ＃ドルーチェ 
+      %li 抜刀
+      %li mimimu
+      %li ムーンダライト
+      %li Milly
+      %li Kai
+      %li Rakabee
+      %li Lipstorm
+      %li Clyde Williams
+      %li Nessa
+      %li etc.....
 
-        
-    / Contact
-    %section#contact.contact-section
-      .container
-        .row
-          .col-lg-12.text-center
-            %h2.section-heading.text-white.text-uppercase Contact
-            %h5.section-subheading.text-white-50.text-muted お気軽にお問い合わせください
-            .social
-              = form_for @contact, url: contacts_path do |f|
-              
-                = f.text_field :name,placeholder: 'name*'
-                %br/
-                %br/
-
-                = f.text_field :email,placeholder: 'email*'
-                %br/
-                %br/
-
-                = f.text_area :message,placeholder: 'message*'
-                %br/
-                %br/
-                .button
-                  = f.submit "SEND"
-                  
-                -# = f.text_area :mp3,placeholder: 'MP3'
-
-        
-        .social.d-flex.justify-content-center
-          %a.mx-2{:href => "https://twitter.com/u5musicxit"}
-            %i.fab.fa-twitter.fa-spin
-          %a.mx-2{:href => "https://www.facebook.com/yugo.takeuchi"}
-            %i.fab.fa-facebook.fa-spin
-          %a.mx-2{:href => "https://www.instagram.com/___u5____/?hl=ja"}
-            %i.fab.fa-instagram.fa-spin
-          %a.mx-2{:href => "https://www.youtube.com/channel/UChAhO3nKwVdZ5GYMF-HkE1g?view_as=subscriber"}
-            %i.fab.fa-youtube.fa-spin
-          %a.mx-2{:href => "https://github.com/yugo333"}
+    %h3 music works:取引先
+    %ul
+      %li プロダクション・アイ.LLC
+      %li スパイラルミュージック
+      %li LGD PRODUCTION
+      %li エイトフォース
+      %li JCC TOKYO
+      %br
+    %h1 IT
+    .row.align-items-center.no-gutters.mb-4.mb-lg-5
+      .col-xl-6.col-lg-5
+        .featured-text.text-center.text-lg-left
+          %a(href="https://vueplanet.netlify.com/" class="titleX") Vue Planet
+          %a.mx-2{:href => "https://github.com/yugo333/v-arse"}
             %i.fab.fa-github.fa-spin
-    / Footer
-    %footer.bg-black.small.text-center.text-white-50
-      .container
-        %img.rounded.mx-auto.d-block{:alt => "", :src => "U5.png", :style => "width: 50px; height: 70px;"}/
-        U5 official MUSIC × IT 2020
-    / Bootstrap core JavaScript
-    %script{:src => "vendor/jquery/jquery.min.js"}
-    %script{:src => "vendor/bootstrap/js/bootstrap.bundle.min.js"}
-    / Plugin JavaScript
-    %script{:src => "vendor/jquery-easing/jquery.easing.min.js"}
-    / Contact form JavaScript
-    %script{:src => "js/jqBootstrapValidation.js"}
-    %script{:src => "js/contact_me.js"}
-    / Custom scripts for this template
-    %script{:src => "js/agency.min.js"}
+          %a.mx-2{:href => "https://vueplanet.netlify.com/"}
+            %i.fas.fa-home.fa-spin
+          %p.text-white-50.mb-0  Vue.js/html/css/canvasを用いて見た目に特化したアプリケーションを作りました。canvasで制作した地球をモチーフにした球体はドラックすると動き、スクロールすると拡大と縮小します。触ってみてください！
+      .col-xl-6.col-lg-7.embed-responsive.embed-responsive-16by9
+        -# %iframe.embed-responsive-item.mb-3.mb-lg-0{:allowfullscreen => "", :src => "https://youtu.be/nt501QYxuKs" }
+        %img.embed-responsive-item.mb-3.mb-lg-2{:alt => "", :src => "qqq.png", :style => "width: 100%; height: 100%;"}/
+    .row.align-items-center.no-gutters.mb-4.mb-lg-5
+      .col-xl-6.col-lg-7.embed-responsive.embed-responsive-16by9
+        -# %iframe.embed-responsive-item.mb-3.mb-lg-0{:allowfullscreen => "", :src => "https://youtu.be/dTHXmFPd0Gc" }
+        %img.embed-responsive-item.mb-3.mb-lg-0{:alt => "", :src => "box.png", :style => "width: 100%; height: 100%;"}/
+      .col-xl-6.col-lg-5
+        .featured-text.text-center.text-lg-left
+          %a(href="https://youtu.be/dTHXmFPd0Gc" class="titleX") sound＿box
+          %a.mx-2{:href => "https://github.com/yugo333/p5_sound_box"}
+            %i.fab.fa-github.fa-spin
+          %a.mx-2{:href => "https://youtu.be/dTHXmFPd0Gc"}
+            %i.fab.fa-youtube.fa-spin
+          %p.text-white-50.mb-0 p5.sound.jsを使い音楽とITを融合させた作品、シンプルにどのシーンでもどのジャンルでも合うような表現にしました
+    .row.align-items-center.no-gutters.mb-4.mb-lg-5
+      .col-xl-6.col-lg-5
+        .featured-text.text-center.text-lg-left
+          %a(href="https://youtu.be/nt501QYxuKs" class="titleX") sound_ball
+          %a.mx-2{:href => "https://github.com/yugo333/p5_ball"}
+            %i.fab.fa-github.fa-spin
+          %a.mx-2{:href => "https://youtu.be/nt501QYxuKs"}
+            %i.fab.fa-youtube.fa-spin
+          %p.text-white-50.mb-0  p5.sound.jsを使い音楽とITを融合させた作品、民族系を意識させた色合い
+      .col-xl-6.col-lg-7.embed-responsive.embed-responsive-16by9
+        -# %iframe.embed-responsive-item.mb-3.mb-lg-0{:allowfullscreen => "", :src => "https://youtu.be/nt501QYxuKs" }
+        %img.embed-responsive-item.mb-3.mb-lg-0{:alt => "", :src => "ball.png", :style => "width: 100%; height: 100%;"}/
+    .row.align-items-center.no-gutters.mb-4.mb-lg-5
+      .col-xl-6.col-lg-7.embed-responsive.embed-responsive-16by9
+        -# %iframe.embed-responsive-item.mb-3.mb-lg-0{:allowfullscreen => "", :src => "https://youtu.be/F4LpwbYw2c8" }
+        %img.embed-responsive-item.mb-3.mb-lg-0{:alt => "", :src => "cube.png", :style => "width: 100%; height: 100%;"}/
+      .col-xl-6.col-lg-5
+        .featured-text.text-center.text-lg-left
+          %a(href="https://youtu.be/F4LpwbYw2c8" class="titleX") p5.js art
+          %a.mx-2{:href => "https://github.com/yugo333/p5_cube_box"}
+            %i.fab.fa-github.fa-spin
+          %a.mx-2{:href => "https://youtu.be/F4LpwbYw2c8"}
+            %i.fab.fa-youtube.fa-spin
+          %p.text-white-50.mb-0 p5.jsとアニメーションcssでのART作品
+    .row.align-items-center.no-gutters.mb-4.mb-lg-5
+      .col-xl-6.col-lg-5
+        .featured-text.text-center.text-lg-left
+          %a(href="http://18.178.185.173/" class="titleX") The Free Sound
+          %a.mx-2{:href => "https://github.com/yugo333/free_music"}
+            %i.fab.fa-github.fa-spin
+          %a.mx-2{:href => "http://18.178.185.173/"}
+            %i.fas.fa-home.fa-spin
+          %p.text-white-50.mb-0  html/css/ruby/rails/aws/mysqlを用いてフリーダウンロードページを作成しました,現状はまだ工事中です
+      .col-xl-6.col-lg-7.embed-responsive.embed-responsive-16by9
+        -# %iframe.embed-responsive-item.mb-3.mb-lg-0{:allowfullscreen => "", :src => "https://youtu.be/nt501QYxuKs" }
+        %img.embed-responsive-item.mb-3.mb-lg-2{:alt => "", :src => "the_free_sound.png", :style => "width: 100%; height: 100%;"}/
+    %h3 TI works: coming soon
+
+    
+/ Contact
+%section#contact.contact-section
+  .container
+    .row
+      .col-lg-12.text-center
+        %h2.section-heading.text-white.text-uppercase Contact
+        %h5.section-subheading.text-white-50.text-muted お気軽にお問い合わせください
+        .social
+          = form_for @contact, url: contacts_path do |f|
+          
+            = f.text_field :name,placeholder: 'name*'
+            %br/
+            %br/
+
+            = f.text_field :email,placeholder: 'email*'
+            %br/
+            %br/
+
+            = f.text_area :message,placeholder: 'message*'
+            %br/
+            %br/
+            .button
+              = f.submit "SEND"
+              
+            -# = f.text_area :mp3,placeholder: 'MP3'
+
+    
+    .social.d-flex.justify-content-center
+      %a.mx-2{:href => "https://twitter.com/u5musicxit"}
+        %i.fab.fa-twitter.fa-spin
+      %a.mx-2{:href => "https://www.facebook.com/yugo.takeuchi"}
+        %i.fab.fa-facebook.fa-spin
+      %a.mx-2{:href => "https://www.instagram.com/___u5____/?hl=ja"}
+        %i.fab.fa-instagram.fa-spin
+      %a.mx-2{:href => "https://www.youtube.com/channel/UChAhO3nKwVdZ5GYMF-HkE1g?view_as=subscriber"}
+        %i.fab.fa-youtube.fa-spin
+      %a.mx-2{:href => "https://github.com/yugo333"}
+        %i.fab.fa-github.fa-spin
+/ Footer
+%footer.bg-black.small.text-center.text-white-50
+  .container
+    %img.rounded.mx-auto.d-block{:alt => "", :src => "U5.png", :style => "width: 50px; height: 70px;"}/
+    U5 official MUSIC × IT 2020
+/ Bootstrap core JavaScript
+%script{:src => "vendor/jquery/jquery.min.js"}
+%script{:src => "vendor/bootstrap/js/bootstrap.bundle.min.js"}
+/ Plugin JavaScript
+%script{:src => "vendor/jquery-easing/jquery.easing.min.js"}
+/ Contact form JavaScript
+%script{:src => "js/jqBootstrapValidation.js"}
+%script{:src => "js/contact_me.js"}
+/ Custom scripts for this template
+%script{:src => "js/agency.min.js"}
